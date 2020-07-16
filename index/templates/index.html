@@ -1,37 +1,53 @@
 {% extends 'layout.html' %}
 
-{% block carousel %}
-{% endblock %}
-
-{% block content %}
-
-	<!-- section -->
-    <div class="section margin-top_50">
-        <div class="container">
-            {% for course in courses %}
-            <div class="row">
-                <div class="col-md-6 layout_padding_2">
-                    <div class="full">
-                        <div class="heading_main text_align_left">
-						   <h2>{{ course.name }}</h2>
-                        </div>
-						<div class="full">
-						  <p>{{ course.desc }}</p>
-						</div>
-						<div class="full">
-						   <a class="hvr-radial-out button-theme" href="{{ course.get_absolute_url }}">About more</a>
-						</div>
-                    </div>
+{% block footer %}
+<div class="bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="d-flex align-items-center all_Logo">
+                    <img src="/static/images/real_logo.png" alt="" class="logo">
+                    <p class="name_company">RealTimeInc</p>
                 </div>
-				<div class="col-md-6">
-                    <div class="full">
-                        <img src="static/images/img2.png" alt="#" />
-                    </div>
+                <div class="d-flex justify-content-between" style="margin-left: 10px;">
+                    <a href="" class="bottom_menu">Main</a>
+                    <a href="" class="bottom_menu">About</a>
+                    <a href="" class="bottom_menu">Courses</a>
+                    <a href="" class="bottom_menu">Maps</a>
                 </div>
             </div>
-            {% endfor %}
+            <div class="col-md-8">
+                <div class="subscribe">
+                    <p>Subscribe to find out the news light bulb as soon as possible</p>
+                </div>
+                <div class="d-flex form">
+                    <input type="text" class="input_email" placeholder="Email">
+                    <a href="">
+                        <div class="button">
+                            <p>Subscribe</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md"></div>
+            <div class="col-md-4 d-flex justify-content-between align-items-center icons">
+                <a href="">
+                    <img src="/static/images/facebook.png" alt="" class="icon_media">
+                </a>
+                <a href="">
+                    <img src="/static/images/instagram.png" alt="" class="icon_media">
+                </a>
+                <a href="">
+                    <img src="/static/images/youtube.png" alt="" class="icon_media">
+                </a>
+                <a href="">
+                    <img src="/static/images/linkedin.png" alt="" class="icon_media">
+                </a>
+            </div>
+            <div class="col-md"></div>
         </div>
     </div>
-	<!-- end section -->
-
+</div>
 {% endblock %}

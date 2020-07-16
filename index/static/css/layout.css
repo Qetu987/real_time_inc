@@ -1,0 +1,81 @@
+
+body, p, a, h1{
+    text-decoration: none;
+    margin: 0;
+    margin-bottom: 0em;
+    padding: 0; 
+}
+.name_company{
+    font-family: Roboto;
+    font-size: 24px;
+    color: #E1E1E1 !important;
+    margin-left: 10px;
+}
+.bottom{
+    background-color: #232323;
+}
+.all_Logo{
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+.logo{
+    height: 60px;
+    width: 60px;
+}
+.bottom_menu{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #E1E1E1 !important;
+}
+.subscribe{
+    margin-top: 80px;
+    font-family: Roboto;
+
+    font-size: 34px;
+    line-height: 42px;
+
+    color: #E1E1E1;
+
+    margin-bottom: 30px;
+}
+.input_email{
+    background-color: #232323;
+    border-bottom: #BAA9A0 solid;
+    width: 450px;
+    margin-left: 10px;
+    color: #BAA9A0;
+    font-size: 24px;
+}
+input::placeholder{
+    color: #BAA9A0;
+    font-size: 24px;
+
+}
+.button{
+    height: 50px;
+    width: 230px;
+    border-radius: 100px;
+    border: #BAA9A0 solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #BAA9A0;
+    font-size: 35px;
+
+    margin-left: 10px;
+}
+.form{
+    margin-bottom: 80px;
+}
+.icons{
+    margin-bottom: 80px;
+}
+.icon_media{
+    height: 45px;
+    width: 45px;
+}
