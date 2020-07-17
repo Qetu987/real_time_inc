@@ -5,13 +5,123 @@ body, p, a, h1{
     margin-bottom: 0em;
     padding: 0; 
 }
+/* bonus */
+.bonus_title{
+    margin-left: 50px;
+    margin-top: 170px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+
+    color: #BAA9A0;
+
+    margin-bottom: 35px;
+}
+.bonus_body{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #8D7D73;
+}
+.bonus_he{
+    height: 700px;
+    background-color: #232323;
+}
+.bonus_button{
+    margin-top: 35px;
+    margin-left: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+    height: 50px;
+
+    border-radius: 100px;
+    border: #BAA9A0 solid 2px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #BAA9A0;
+    
+    margin-bottom: 170px;
+}
+.bonus_macbook{
+    height: 350px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+/* end bonus */
+
+/* about */
+.about_bg{
+    height: 800px;
+    background-image: url("/static/images/bd_about.png");
+    background-size: cover;
+    background-position: center;
+}
+/* end about */
+
+/* contact us */
+.contactUs{
+    height: 350px;
+    background-image: url("/static/images/bg_contactUs.png");
+    background-size: cover;
+    background-position: center;
+}
+.already_loved{
+    margin-top: 75px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+
+    color: #232323;
+
+    margin-bottom: 45px;
+}
+.button_contactUs{
+    width: 360px;
+    height: 80px;
+    border-radius: 100px;
+    border: #232323 solid 2px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 42px;
+    text-align: center;
+
+    color: #232323;
+}
+/* end contact us */
+
+/* footer */
 .name_company{
     font-family: Roboto;
     font-size: 24px;
     color: #E1E1E1 !important;
     margin-left: 10px;
 }
-.bottom{
+.dark_bg{
     background-color: #232323;
 }
 .all_Logo{
@@ -32,10 +142,11 @@ body, p, a, h1{
     color: #E1E1E1 !important;
 }
 .subscribe{
+    margin-left:20px ;
     margin-top: 80px;
     font-family: Roboto;
 
-    font-size: 34px;
+    font-size: 30px;
     line-height: 42px;
 
     color: #E1E1E1;
@@ -79,3 +190,4 @@ input::placeholder{
     height: 45px;
     width: 45px;
 }
+/* end footer */
