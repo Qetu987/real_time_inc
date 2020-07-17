@@ -1,0 +1,67 @@
+{% load static %}
+
+{% block main %}
+<div class="main_bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="d-flex align-items-center margin_logo_main">
+                    <img src="{% static 'images/real_logo.png' %}" alt="" class="logo">
+                    <p class="name_company">RealTimeInc</p>
+                </div>
+            </div>
+            <div class="col-md"></div>
+            <div class="col-md-4 d-flex justify-content-around">
+                <a href="/">
+                    <div class="main_menu_item">
+                        <p>Main</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="main_menu_item">
+                        <p>About</p>
+                    </div>
+                </a>
+                <a href="{% url 'all-course' %}">
+                    <div class="main_menu_item">
+                        <p>Courses</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="main_menu_item">
+                        <p>Maps</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="main_menu_item">
+                        <p>Log in</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="main_title">Lorem ipsum dolor sit amet</p>
+                <p class="main_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Mauris pulvinar molestie in adipiscing purus congue egestas iaculis nisi. 
+                    Habitasse tempor aliquam mattis volutpat gravida eget nisi, sit.</p>
+            </div>
+            <div class="col-md-6">
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+                <a href="">
+                    <img src="{% static 'images/arrow.png' %}" alt="" class="main_arrow">
+                </a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+{% endblock %}

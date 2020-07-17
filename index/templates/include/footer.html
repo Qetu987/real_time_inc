@@ -1,0 +1,53 @@
+{% load static %}
+{% block footer %}
+<div class="dark_bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="d-flex align-items-center all_Logo">
+                    <img src="{% static 'images/real_logo.png' %}" alt="" class="logo">
+                    <p class="name_company">RealTimeInc</p>
+                </div>
+                <div class="d-flex justify-content-between" >
+                    <a href="/" class="bottom_menu">Main</a>
+                    <a href="" class="bottom_menu">About</a>
+                    <a href="{% url 'all-course' %}" class="bottom_menu">Courses</a>
+                    <a href="" class="bottom_menu">Maps</a>
+                </div>
+            </div>
+            <div class="col-md"></div>
+            <div class="col-md-7">
+                <div class="subscribe">
+                    <p>Subscribe to find out the news light bulb as soon as possible</p>
+                </div>
+                <div class="d-flex form">
+                    <input type="text" class="input_email" placeholder="Email">
+                    <a href="">
+                        <div class="button">
+                            <p>Subscribe</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md"></div>
+            <div class="col-md-4 d-flex justify-content-between align-items-center icons">
+                <a href="">
+                    <img src="{% static 'images/facebook.png' %}" alt="" class="icon_media">
+                </a>
+                <a href="">
+                    <img src="{% static 'images/instagram.png' %}" alt="" class="icon_media">
+                </a>
+                <a href="">
+                    <img src="{% static 'images/youtube.png' %}" alt="" class="icon_media">
+                </a>
+                <a href="">
+                    <img src="{% static 'images/linkedin.png' %}" alt="" class="icon_media">
+                </a>
+            </div>
+            <div class="col-md"></div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% load static %}
+
+{% block bonus %}
+<div class="dark_bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6  d-flex align-items-center">
+                <div>
+                    <p class="bonus_title">Bonus for friend</p>
+                    <p class="bonus_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Mauris pulvinar molestie in adipiscing purus congue egestas iaculis nisi. 
+                                Habitasse tempor aliquam mattis volutpat gravida eget nisi, sit. 
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Mauris pulvinar molestie in adipiscing purus congue egestas iaculis nisi. 
+                                Habitasse tempor aliquam mattis volutpat gravida eget nisi, sit.</p>
+                    <a href="">
+                        <div class="bonus_button">
+                            <p>Read More</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6  d-flex align-items-center">
+                <img src="{% static 'images/macbook.png' %}" alt="" class="bonus_macbook">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

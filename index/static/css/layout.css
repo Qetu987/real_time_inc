@@ -383,3 +383,112 @@ input::placeholder{
     width: 45px;
 }
 /* end footer */
+
+/* fing course */
+.find_course_bg{
+    background-image: url("/static/images/bg_find_course.png");
+    background-size: cover;
+    background-position: center;
+}
+.find_course_title{
+    margin-top: 150px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: 0.08em;
+
+    color: #232323;
+    margin-bottom: 30px;
+}
+.search{
+    height: 80px;
+    width: 650px;
+
+    border-radius: 100px;
+    background-color: #7F6759;
+
+    margin-bottom: 250px;
+}
+/* enf fing course */
+
+/* all courses */
+.all_courses_bd{
+    background-image: url("/static/images/all_courses_bg.png");
+    background-size: cover;
+    background-position: center;
+}
+.all_courses_title{
+    margin-top: 50px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: 0.08em;
+
+    color: #232323;
+
+    margin-bottom: 50px;
+}
+.element_all_photo{
+    width: 350px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.element_all_photo_photo{
+    width: 290px;
+    height: 290px;
+}
+.all_element_title{
+    margin-top: 10px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+
+    color: #232323;
+}
+.all_element_desc{
+    margin-top: 10px;
+    text-align: center;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #9A9A9E;
+
+    margin-bottom: 20px;
+}
+.like{
+    height: 30px;
+}
+.count_like{
+    margin-left: 5px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #9A9A9E;
+}
+.cost_course{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    
+    color: #699F75;
+}
+/* end all courses */

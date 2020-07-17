@@ -15,12 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from index.views import index, course
+from index.views import index
 
 urlpatterns = [
-    path('grappelli/', include('grappelli.urls')),
-    path('admin/', admin.site.urls),
-    path('', index),
-    path('course/', include('course.urls')),
-    path('course', course, name='all-course'),
+    
 ]
