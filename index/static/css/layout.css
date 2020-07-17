@@ -5,6 +5,58 @@ body, p, a, h1{
     margin-bottom: 0em;
     padding: 0; 
 }
+a:hover{
+    text-decoration: none;
+}
+/* main */
+.main_bg{
+    background-image: url("/static/images/main_bg.png");
+    background-size: cover;
+    background-position: center;
+}
+.margin_logo_main{
+    margin-top: 15px;
+}
+.main_menu_item{
+    margin-top: 25px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 16px;
+
+    color: #232323;
+}
+.main_title{
+    margin-top: 350px;
+    margin-left: 50px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 42px;
+
+    color: #232323;
+}
+.main_desc{
+    margin-top: 10px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+
+    color: #494949;
+}
+.main_arrow{
+    margin-top: 140px;
+    margin-bottom: 20px;
+}
+/* end main */
+
 /* bonus */
 .bonus_title{
     margin-left: 50px;
@@ -226,8 +278,9 @@ body, p, a, h1{
     margin-bottom: 45px;
 }
 .button_contactUs{
-    width: 360px;
-    height: 80px;
+    margin-top: 10px;
+    width: 300px;
+    height: 60px;
     border-radius: 100px;
     border: #232323 solid 2px;
 
@@ -243,7 +296,14 @@ body, p, a, h1{
     text-align: center;
 
     color: #232323;
+    transition: 0.2s;
 }
+.button_contactUs:hover{
+    border: #7F6759 solid 2px;
+    color: #7F6759;
+}
+
+
 /* end contact us */
 
 /* footer */

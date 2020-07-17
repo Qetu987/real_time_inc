@@ -1,8 +1,69 @@
 {% extends 'layout.html' %}
+{% load static %}
 
 {% block main %}
 <div class="main_bg">
-    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="d-flex align-items-center margin_logo_main">
+                    <img src="{% static 'images/real_logo.png' %}" alt="" class="logo">
+                    <p class="name_company">RealTimeInc</p>
+                </div>
+            </div>
+            <div class="col-md"></div>
+            <div class="col-md-4 d-flex justify-content-around">
+                <a href="">
+                    <div class="main_menu_item">
+                        <p>Main</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="main_menu_item">
+                        <p>About</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="main_menu_item">
+                        <p>Courses</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="main_menu_item">
+                        <p>Maps</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="main_menu_item">
+                        <p>Log in</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="main_title">Lorem ipsum dolor sit amet</p>
+                <p class="main_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Mauris pulvinar molestie in adipiscing purus congue egestas iaculis nisi. 
+                    Habitasse tempor aliquam mattis volutpat gravida eget nisi, sit.</p>
+            </div>
+            <div class="col-md-6">
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+                <a href="">
+                    <img src="{% static 'images/arrow.png' %}" alt="" class="main_arrow">
+                </a>
+            </div>
+            
+        </div>
+    </div>
 </div>
 {% endblock %}
 
@@ -28,7 +89,7 @@
                 </div>
             </div>
             <div class="col-md-6  d-flex align-items-center">
-                <img src="/static/images/macbook.png" alt="" class="bonus_macbook">
+                <img src="{% static 'images/macbook.png' %}" alt="" class="bonus_macbook">
             </div>
         </div>
     </div>
@@ -53,9 +114,9 @@
         <div class="row">
             <div class="col-md"></div>
             <div class="col-md-4 d-flex justify-content-around">
-                <img src="/static/images/heart.png" alt="" class="about_img">
-                <img src="/static/images/light.png" alt="" class="about_img">
-                <img src="/static/images/mouse.png" alt="" class="about_img">
+                <img src="{% static 'images/heart.png' %}" alt="" class="about_img">
+                <img src="{% static 'images/light.png' %}" alt="" class="about_img">
+                <img src="{% static 'images/mouse.png' %}" alt="" class="about_img">
             </div>
             <div class="col-md"></div>
         </div>
@@ -107,7 +168,7 @@
                     <div class="col-md">
                         <div class="element_corusel">
                             <div class="element_corusel_photo">
-                                <img src="/static/images/course_ing.png" alt="" class="element_corusel_photo_photo">
+                                <img src="{% static 'images/course_ing.png' %}" alt="" class="element_corusel_photo_photo">
                             </div>
                             <div class="element_corusel_desc">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -124,7 +185,7 @@
                     <div class="col-md">
                         <div class="element_corusel">
                             <div class="element_corusel_photo">
-                                <img src="/static/images/course_ing.png" alt="" class="element_corusel_photo_photo">
+                                <img src="{% static 'images/course_ing.png' %}" alt="" class="element_corusel_photo_photo">
                             </div>
                             <div class="element_corusel_desc">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -141,64 +202,7 @@
                     <div class="col-md">
                         <div class="element_corusel">
                             <div class="element_corusel_photo">
-                                <img src="/static/images/course_ing.png" alt="" class="element_corusel_photo_photo">
-                            </div>
-                            <div class="element_corusel_desc">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </div>
-                            <div class="element_corusel_button">
-                                <a href="">
-                                    <div class="element_corusel_button_button">
-                                        <p>Read More</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md">
-                        <div class="element_corusel">
-                            <div class="element_corusel_photo">
-                                <img src="/static/images/course_ing.png" alt="" class="element_corusel_photo_photo">
-                            </div>
-                            <div class="element_corusel_desc">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </div>
-                            <div class="element_corusel_button">
-                                <a href="">
-                                    <div class="element_corusel_button_button">
-                                        <p>Read More</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md">
-                        <div class="element_corusel">
-                            <div class="element_corusel_photo">
-                                <img src="/static/images/course_ing.png" alt="" class="element_corusel_photo_photo">
-                            </div>
-                            <div class="element_corusel_desc">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </div>
-                            <div class="element_corusel_button">
-                                <a href="">
-                                    <div class="element_corusel_button_button">
-                                        <p>Read More</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md">
-                        <div class="element_corusel">
-                            <div class="element_corusel_photo">
-                                <img src="/static/images/course_ing.png" alt="" class="element_corusel_photo_photo">
+                                <img src="{% static 'images/course_ing.png' %}" alt="" class="element_corusel_photo_photo">
                             </div>
                             <div class="element_corusel_desc">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -221,7 +225,7 @@
                     <div class="col-md">
                         <div class="element_corusel">
                             <div class="element_corusel_photo">
-                                <img src="/static/images/course_ing.png" alt="" class="element_corusel_photo_photo">
+                                <img src="{% static 'images/course_ing.png' %}" alt="" class="element_corusel_photo_photo">
                             </div>
                             <div class="element_corusel_desc">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -238,7 +242,7 @@
                     <div class="col-md">
                         <div class="element_corusel">
                             <div class="element_corusel_photo">
-                                <img src="/static/images/course_ing.png" alt="" class="element_corusel_photo_photo">
+                                <img src="{% static 'images/course_ing.png' %}" alt="" class="element_corusel_photo_photo">
                             </div>
                             <div class="element_corusel_desc">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -255,7 +259,64 @@
                     <div class="col-md">
                         <div class="element_corusel">
                             <div class="element_corusel_photo">
-                                <img src="/static/images/course_ing.png" alt="" class="element_corusel_photo_photo">
+                                <img src="{% static 'images/course_ing.png' %}" alt="" class="element_corusel_photo_photo">
+                            </div>
+                            <div class="element_corusel_desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="element_corusel_button">
+                                <a href="">
+                                    <div class="element_corusel_button_button">
+                                        <p>Read More</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md">
+                        <div class="element_corusel">
+                            <div class="element_corusel_photo">
+                                <img src="{% static 'images/course_ing.png' %}" alt="" class="element_corusel_photo_photo">
+                            </div>
+                            <div class="element_corusel_desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="element_corusel_button">
+                                <a href="">
+                                    <div class="element_corusel_button_button">
+                                        <p>Read More</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="element_corusel">
+                            <div class="element_corusel_photo">
+                                <img src="{% static 'images/course_ing.png' %}" alt="" class="element_corusel_photo_photo">
+                            </div>
+                            <div class="element_corusel_desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="element_corusel_button">
+                                <a href="">
+                                    <div class="element_corusel_button_button">
+                                        <p>Read More</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="element_corusel">
+                            <div class="element_corusel_photo">
+                                <img src="{% static 'images/course_ing.png' %}" alt="" class="element_corusel_photo_photo">
                             </div>
                             <div class="element_corusel_desc">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -322,7 +383,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="d-flex align-items-center all_Logo">
-                    <img src="/static/images/real_logo.png" alt="" class="logo">
+                    <img src="{% static 'images/real_logo.png' %}" alt="" class="logo">
                     <p class="name_company">RealTimeInc</p>
                 </div>
                 <div class="d-flex justify-content-between" >
@@ -351,16 +412,16 @@
             <div class="col-md"></div>
             <div class="col-md-4 d-flex justify-content-between align-items-center icons">
                 <a href="">
-                    <img src="/static/images/facebook.png" alt="" class="icon_media">
+                    <img src="{% static 'images/facebook.png' %}" alt="" class="icon_media">
                 </a>
                 <a href="">
-                    <img src="/static/images/instagram.png" alt="" class="icon_media">
+                    <img src="{% static 'images/instagram.png' %}" alt="" class="icon_media">
                 </a>
                 <a href="">
-                    <img src="/static/images/youtube.png" alt="" class="icon_media">
+                    <img src="{% static 'images/youtube.png' %}" alt="" class="icon_media">
                 </a>
                 <a href="">
-                    <img src="/static/images/linkedin.png" alt="" class="icon_media">
+                    <img src="{% static 'images/linkedin.png' %}" alt="" class="icon_media">
                 </a>
             </div>
             <div class="col-md"></div>
