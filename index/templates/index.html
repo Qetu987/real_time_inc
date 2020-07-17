@@ -1,5 +1,10 @@
 {% extends 'layout.html' %}
 
+{% block main %}
+<div class="main_bg">
+    
+</div>
+{% endblock %}
 
 
 {% block bonus %}
@@ -36,15 +41,255 @@
 <div class="about_bg">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 d-flex">
-                <p>DETIALS ABOUT REALTIMEINC</p>
+            <div class="col-md-12 d-flex justify-content-center">
+                <p class="about_title">DETIALS ABOUT REALTIMEINC</p>
             </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+                <p class="main_qualities">The main qualities of our courses</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md"></div>
+            <div class="col-md-4 d-flex justify-content-around">
+                <img src="/static/images/heart.png" alt="" class="about_img">
+                <img src="/static/images/light.png" alt="" class="about_img">
+                <img src="/static/images/mouse.png" alt="" class="about_img">
+            </div>
+            <div class="col-md"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-5">
+                <div>
+                    <p class="about_creative">Creative ideas</p>
+                    <p class="about_creative_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Purus euismod aliquam ut eget tincidunt cursus sed imperdiet. 
+                        Accumsan vel convallis gravida mattis non ullamcorper mattis dolor sed.</p>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-6">
+                <p class="about_more_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Facilisi mi aliquam, eu, nisl nulla aenean vel mauris. 
+                    Vivamus a id erat mauris duis bibendum euismod nam eu. 
+                    Id massa justo, commodo amet at pretium fames cras dignissim. 
+                    Lacus, urna, sed nascetur dapibus viverra massa nisl. Arcu, pellentesque ultrices imperdiet convallis nulla faucibus sapien. 
+                    Enim est auctor venenatis volutpat ultrices est.</p>
+            </div>
+            
         </div>
     </div>
 </div>
-
-<div class="bonus_he"></div>
 {% endblock %}
+
+
+{% block carousel %}
+<div class="corusel_bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+                <p class="title_corusel">TOP COURSES</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md">
+                        <div class="element_corusel">
+                            <div class="element_corusel_photo">
+                                <img src="/static/images/course_ing.png" alt="" class="element_corusel_photo_photo">
+                            </div>
+                            <div class="element_corusel_desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="element_corusel_button">
+                                <a href="">
+                                    <div class="element_corusel_button_button">
+                                        <p>Read More</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="element_corusel">
+                            <div class="element_corusel_photo">
+                                <img src="/static/images/course_ing.png" alt="" class="element_corusel_photo_photo">
+                            </div>
+                            <div class="element_corusel_desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="element_corusel_button">
+                                <a href="">
+                                    <div class="element_corusel_button_button">
+                                        <p>Read More</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="element_corusel">
+                            <div class="element_corusel_photo">
+                                <img src="/static/images/course_ing.png" alt="" class="element_corusel_photo_photo">
+                            </div>
+                            <div class="element_corusel_desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="element_corusel_button">
+                                <a href="">
+                                    <div class="element_corusel_button_button">
+                                        <p>Read More</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md">
+                        <div class="element_corusel">
+                            <div class="element_corusel_photo">
+                                <img src="/static/images/course_ing.png" alt="" class="element_corusel_photo_photo">
+                            </div>
+                            <div class="element_corusel_desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="element_corusel_button">
+                                <a href="">
+                                    <div class="element_corusel_button_button">
+                                        <p>Read More</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="element_corusel">
+                            <div class="element_corusel_photo">
+                                <img src="/static/images/course_ing.png" alt="" class="element_corusel_photo_photo">
+                            </div>
+                            <div class="element_corusel_desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="element_corusel_button">
+                                <a href="">
+                                    <div class="element_corusel_button_button">
+                                        <p>Read More</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="element_corusel">
+                            <div class="element_corusel_photo">
+                                <img src="/static/images/course_ing.png" alt="" class="element_corusel_photo_photo">
+                            </div>
+                            <div class="element_corusel_desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="element_corusel_button">
+                                <a href="">
+                                    <div class="element_corusel_button_button">
+                                        <p>Read More</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md">
+                        <div class="element_corusel">
+                            <div class="element_corusel_photo">
+                                <img src="/static/images/course_ing.png" alt="" class="element_corusel_photo_photo">
+                            </div>
+                            <div class="element_corusel_desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="element_corusel_button">
+                                <a href="">
+                                    <div class="element_corusel_button_button">
+                                        <p>Read More</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="element_corusel">
+                            <div class="element_corusel_photo">
+                                <img src="/static/images/course_ing.png" alt="" class="element_corusel_photo_photo">
+                            </div>
+                            <div class="element_corusel_desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="element_corusel_button">
+                                <a href="">
+                                    <div class="element_corusel_button_button">
+                                        <p>Read More</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="element_corusel">
+                            <div class="element_corusel_photo">
+                                <img src="/static/images/course_ing.png" alt="" class="element_corusel_photo_photo">
+                            </div>
+                            <div class="element_corusel_desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="element_corusel_button">
+                                <a href="">
+                                    <div class="element_corusel_button_button">
+                                        <p>Read More</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+        </a><div class="carusel_bottom"></div>
+    </div>
+    
+</div>
+
+    
+</div>
+{% endblock %}
+
 
 {% block ContuctUs %}
 
