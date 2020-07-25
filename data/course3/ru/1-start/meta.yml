@@ -1,0 +1,25 @@
+slug: wmm-start
+name: Старт проекта.
+meta_title: Старт проекта.
+meta_keywords: Старт проекта.
+meta_description: Старт проекта.
+is_active: true
+desc:
+        
+files:
+    -
+        file:  start-project.md
+        title: Начало проекта.
+        meta_title: Начало проекта.
+        meta_description:  Начало проекта.
+        meta_keywords: Начало проекта.
+        desc: 
+            
+    -
+        file:  command-read-yml.md
+        title: Команда чтения yml.
+        meta_title: Команда чтения yml.
+        meta_description: Команда чтения yml.
+        meta_keywords: Команда чтения yml.
+        desc: 
+        youtube: https://www.youtube.com/embed/Azdpcb8P1M0
