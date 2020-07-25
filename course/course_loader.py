@@ -32,6 +32,7 @@ class CourseLoader(object):
         self.course.meta_title = meta['meta_title_ru']
         self.course.meta_description = meta['meta_description_ru']
         self.course.desc = meta['desc_ru']
+        self.course.sale = meta['sale']
         self.course.save()
         try:
             im_path = DATA_DIR + '/' + self.dir + '/image.png'

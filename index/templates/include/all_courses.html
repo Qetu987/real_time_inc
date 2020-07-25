@@ -9,270 +9,45 @@
             </div>
         </div>
     </div>
+    {% for rows in courses %}
     <div class="container">
         <div class="row">
-            <div class="col-md">
-                <div class="element_corusel">
-                    <div class="element_all_photo">
-                        <img src="{% static 'images/course_ing.png' %}" alt="" class="element_all_photo_photo">
-                    </div>
-                    <div class="all_element_title d-flex justify-content-center">
-                        <p>Lorem ipsum</p>
-                    </div>
-                    <div class="all_element_desc">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md d-flex justify-content-center align-items-center">
-                                <img src="{% static 'images/like.png' %}" alt="" class="like">
-                                <p class="count_like">2k</p>
-                            </div>
-                            <div class="col-md d-flex justify-content-center align-items-center">
-                                <p class="cost_course">120$</p>
-                            </div>
-                            <div class="col-md d-flex justify-content-center align-items-center">
-                                <img src="{% static 'images/star.png' %}" alt="" class="like">
-                                <p class="count_like">5.0</p>
+            {% for row in rows %}
+                <div class="col-md-4">
+                <a href="">
+                    <div class="element_corusel">
+                        <div class="element_all_photo">
+                            <img src="{{ row.image }}" alt="" class="element_all_photo_photo">
+                        </div>
+                        <div class="all_element_title d-flex justify-content-center">
+                            <p>{{ row.name }}</p>
+                        </div>
+                        <div class="all_element_desc">
+                            <p>{{ row.desc }}</p>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md d-flex justify-content-center align-items-center">
+                                    <img src="{% static 'images/like.png' %}" alt="" class="like">
+                                    <p class="count_like">2k</p>
+                                </div>
+                                <div class="col-md d-flex justify-content-center align-items-center">
+                                    <p class="cost_course">{{ row.sale }}</p>
+                                </div>
+                                <div class="col-md d-flex justify-content-center align-items-center">
+                                    <img src="{% static 'images/star.png' %}" alt="" class="like">
+                                    <p class="count_like">5.0</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
-            <div class="col-md">
-                <div class="element_corusel">
-                    <div class="element_all_photo">
-                        <img src="{% static 'images/course_ing.png' %}" alt="" class="element_all_photo_photo">
-                    </div>
-                    <div class="all_element_title d-flex justify-content-center">
-                        <p>Lorem ipsum</p>
-                    </div>
-                    <div class="all_element_desc">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md d-flex justify-content-center align-items-center">
-                                <img src="{% static 'images/like.png' %}" alt="" class="like">
-                                <p class="count_like">2k</p>
-                            </div>
-                            <div class="col-md d-flex justify-content-center align-items-center">
-                                <p class="cost_course">120$</p>
-                            </div>
-                            <div class="col-md d-flex justify-content-center align-items-center">
-                                <img src="{% static 'images/star.png' %}" alt="" class="like">
-                                <p class="count_like">5.0</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md">
-                <div class="element_corusel">
-                    <div class="element_all_photo">
-                        <img src="{% static 'images/course_ing.png' %}" alt="" class="element_all_photo_photo">
-                    </div>
-                    <div class="all_element_title d-flex justify-content-center">
-                        <p>Lorem ipsum</p>
-                    </div>
-                    <div class="all_element_desc">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md d-flex justify-content-center align-items-center">
-                                <img src="{% static 'images/like.png' %}" alt="" class="like">
-                                <p class="count_like">2k</p>
-                            </div>
-                            <div class="col-md d-flex justify-content-center align-items-center">
-                                <p class="cost_course">120$</p>
-                            </div>
-                            <div class="col-md d-flex justify-content-center align-items-center">
-                                <img src="{% static 'images/star.png' %}" alt="" class="like">
-                                <p class="count_like">5.0</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md">
-                <div class="element_corusel">
-                    <div class="element_all_photo">
-                        <img src="{% static 'images/course_ing.png' %}" alt="" class="element_all_photo_photo">
-                    </div>
-                    <div class="all_element_title d-flex justify-content-center">
-                        <p>Lorem ipsum</p>
-                    </div>
-                    <div class="all_element_desc">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md d-flex justify-content-center align-items-center">
-                                <img src="{% static 'images/like.png' %}" alt="" class="like">
-                                <p class="count_like">2k</p>
-                            </div>
-                            <div class="col-md d-flex justify-content-center align-items-center">
-                                <p class="cost_course">120$</p>
-                            </div>
-                            <div class="col-md d-flex justify-content-center align-items-center">
-                                <img src="{% static 'images/star.png' %}" alt="" class="like">
-                                <p class="count_like">5.0</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md">
-                <div class="element_corusel">
-                    <div class="element_all_photo">
-                        <img src="{% static 'images/course_ing.png' %}" alt="" class="element_all_photo_photo">
-                    </div>
-                    <div class="all_element_title d-flex justify-content-center">
-                        <p>Lorem ipsum</p>
-                    </div>
-                    <div class="all_element_desc">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md d-flex justify-content-center align-items-center">
-                                <img src="{% static 'images/like.png' %}" alt="" class="like">
-                                <p class="count_like">2k</p>
-                            </div>
-                            <div class="col-md d-flex justify-content-center align-items-center">
-                                <p class="cost_course">120$</p>
-                            </div>
-                            <div class="col-md d-flex justify-content-center align-items-center">
-                                <img src="{% static 'images/star.png' %}" alt="" class="like">
-                                <p class="count_like">5.0</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md">
-                <div class="element_corusel">
-                    <div class="element_all_photo">
-                        <img src="{% static 'images/course_ing.png' %}" alt="" class="element_all_photo_photo">
-                    </div>
-                    <div class="all_element_title d-flex justify-content-center">
-                        <p>Lorem ipsum</p>
-                    </div>
-                    <div class="all_element_desc">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md d-flex justify-content-center align-items-center">
-                                <img src="{% static 'images/like.png' %}" alt="" class="like">
-                                <p class="count_like">2k</p>
-                            </div>
-                            <div class="col-md d-flex justify-content-center align-items-center">
-                                <p class="cost_course">120$</p>
-                            </div>
-                            <div class="col-md d-flex justify-content-center align-items-center">
-                                <img src="{% static 'images/star.png' %}" alt="" class="like">
-                                <p class="count_like">5.0</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md">
-                <div class="element_corusel">
-                    <div class="element_all_photo">
-                        <img src="{% static 'images/course_ing.png' %}" alt="" class="element_all_photo_photo">
-                    </div>
-                    <div class="all_element_title d-flex justify-content-center">
-                        <p>Lorem ipsum</p>
-                    </div>
-                    <div class="all_element_desc">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md d-flex justify-content-center align-items-center">
-                                <img src="{% static 'images/like.png' %}" alt="" class="like">
-                                <p class="count_like">2k</p>
-                            </div>
-                            <div class="col-md d-flex justify-content-center align-items-center">
-                                <p class="cost_course">120$</p>
-                            </div>
-                            <div class="col-md d-flex justify-content-center align-items-center">
-                                <img src="{% static 'images/star.png' %}" alt="" class="like">
-                                <p class="count_like">5.0</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md">
-                <div class="element_corusel">
-                    <div class="element_all_photo">
-                        <img src="{% static 'images/course_ing.png' %}" alt="" class="element_all_photo_photo">
-                    </div>
-                    <div class="all_element_title d-flex justify-content-center">
-                        <p>Lorem ipsum</p>
-                    </div>
-                    <div class="all_element_desc">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md d-flex justify-content-center align-items-center">
-                                <img src="{% static 'images/like.png' %}" alt="" class="like">
-                                <p class="count_like">2k</p>
-                            </div>
-                            <div class="col-md d-flex justify-content-center align-items-center">
-                                <p class="cost_course">120$</p>
-                            </div>
-                            <div class="col-md d-flex justify-content-center align-items-center">
-                                <img src="{% static 'images/star.png' %}" alt="" class="like">
-                                <p class="count_like">5.0</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md">
-                <div class="element_corusel">
-                    <div class="element_all_photo">
-                        <img src="{% static 'images/course_ing.png' %}" alt="" class="element_all_photo_photo">
-                    </div>
-                    <div class="all_element_title d-flex justify-content-center">
-                        <p>Lorem ipsum</p>
-                    </div>
-                    <div class="all_element_desc">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md d-flex justify-content-center align-items-center">
-                                <img src="{% static 'images/like.png' %}" alt="" class="like">
-                                <p class="count_like">2k</p>
-                            </div>
-                            <div class="col-md d-flex justify-content-center align-items-center">
-                                <p class="cost_course">120$</p>
-                            </div>
-                            <div class="col-md d-flex justify-content-center align-items-center">
-                                <img src="{% static 'images/star.png' %}" alt="" class="like">
-                                <p class="count_like">5.0</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    {% endfor %}
+    
     <div style="padding-bottom:50px ;"></div>
 </div>
 {% endblock %}

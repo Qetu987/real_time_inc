@@ -26,6 +26,7 @@ class Course(models.Model):
     meta_description = models.TextField(blank=True, null = True)
     name_slug = models.CharField(verbose_name='Name slug',max_length=250, blank=True, null = True)
     is_active = models.BooleanField(verbose_name=_('Is published?'), default=False)
+    sale = models.CharField(max_length=150, blank=True, verbose_name=_(u'sale'))
 
 
 
@@ -47,6 +48,7 @@ class Lesson(models.Model):
     image = models.ImageField(blank=True, verbose_name=_(u'Image'), upload_to='lessons_images', null=True)
     course = models.ForeignKey(Course, verbose_name=_(u'Course'), on_delete=models.CASCADE)
     name_slug = models.CharField(verbose_name='Name slug', max_length=250, blank=True)
+    
 
     def get_absolute_url(self):
         return reverse('lesson_detail', kwargs={'slug': self.name_slug })

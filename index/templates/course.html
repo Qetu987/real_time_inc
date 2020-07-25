@@ -9,9 +9,7 @@
 {% endblock %}
 
 {% block contact %}
-    {% include "include/all_courses.html" %}
+    {% include "include/all_courses.html" with courses=courses %}
 {% endblock %}
 
-{% block footer %}
-    {% include "include/footer.html" %}
-{% endblock %}
+

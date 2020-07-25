@@ -2,53 +2,7 @@
 
 {% block main %}
 <div class="main_bg">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-2">
-                <div class="d-flex align-items-center margin_logo_main">
-                    <img src="{% static 'images/real_logo.png' %}" alt="" class="logo">
-                    <p class="name_company">RealTimeInc</p>
-                </div>
-            </div>
-            <div class="col-md"></div>
-            <div class="col-md-4 d-flex justify-content-around">
-                <a href="/">
-                    <div class="main_menu_item">
-                        <p>Main</p>
-                    </div>
-                </a>
-                <a href="/#about">
-                    <div class="main_menu_item">
-                        <p>About</p>
-                    </div>
-                </a>
-                <a href="{% url 'all-course' %}">
-                    <div class="main_menu_item">
-                        <p>Courses</p>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="main_menu_item">
-                        <p>Maps</p>
-                    </div>
-                </a>
-                {% if user.is_authenticated %}
-                        <a href="">
-                            <div class="main_menu_item">
-                                <p>Log out</p>
-                            </div>
-                        </a>
-                {% else %}
-                        <a href='{% url "social:begin" "google-oauth2" %}'>
-                            <div class="main_menu_item">
-                                <p>Log in</p>
-                            </div>
-                        </a>
-                        
-                {% endif %}
-            </div>
-        </div>
-    </div>
+    {% include "include/menu.html"%}
     <div class="container">
         <div class="row">
             <div class="col-md-6">

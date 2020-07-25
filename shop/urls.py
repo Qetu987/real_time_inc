@@ -15,12 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from index.views import index, course
+from index.views import index, course, logout
 
 urlpatterns = [
     path('grappelli/', include('grappelli.urls')),
     path('admin/', admin.site.urls),
     path('', index),
+    path('logout', logout, name='logout'),
     path('course/', include('course.urls')),
     path('course', course, name='all-course'),
     path('social-auth/', include('social_django.urls', namespace="social")),
