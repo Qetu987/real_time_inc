@@ -1,0 +1,77 @@
+{% load static %}
+
+<div class="course_bg">
+    {% include "include/menu.html"%}
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 d-flex justify-content-center course_page_image">
+                <img src="{{ course.image.url }}" alt="" class="course_item_image">
+            </div>
+            <div class="col-md-1">
+
+            </div>
+            <div class="col-md-8">
+                <h1 class="course_page_title">{{ course.name }}</h1>
+                <p class="course_page_desc">{{ course.desc }}</p>
+                <div class="d-flex justify-content-between like_line">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <img src="{% static 'images/like.png' %}" alt="" class="like">
+                        <p class="count_like">2k</p>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <img src="{% static 'images/star.png' %}" alt="" class="like">
+                        <p class="count_like">5.0</p>
+                    </div>
+                </div>
+                <hr class="like_line_hr">
+                <div class="buy_field">
+                    <a href="" class="">
+                        <div class="buy_button">
+                            <p>Buy course</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        {% if user.is_authenticated %}
+            <div class="row d-flex justify-content-center">
+                <div class="col-md lesson_couse">
+                    <div class="lesson_image_field">
+                        <img src="{% static 'images/course_ing.png' %}" alt="" class="lesson_image">
+                    </div>
+                    <div class="lesson_info">
+                        <div class="Lesson_block_title">
+                            <p>Title</p>
+                        </div>
+                        <div class="lesson_block_desc">
+                            <p>desk</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        
+            <div class="row justify-content-center">
+                <div class="col-md-12 lesson_couse">
+
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-12 lesson_couse">
+
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-12 lesson_couse">
+
+                </div>
+            </div>
+        {% endif %}
+    </div>
+    <div class="container bottom_margin">
+        
+    </div>
+</div>

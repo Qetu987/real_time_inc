@@ -16,7 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from index.views import index
+from course.views import course_detail
+
 
 urlpatterns = [
-    
+    path('course_detail/<slug:slug>', course_detail, name='course_detail'),
 ]

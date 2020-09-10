@@ -442,6 +442,8 @@ input::placeholder{
 .element_all_photo_photo{
     width: 290px;
     height: 290px;
+    object-fit: cover;
+    object-position: center;
 }
 .all_element_title{
     margin-top: 10px;
@@ -492,3 +494,131 @@ input::placeholder{
     color: #699F75;
 }
 /* end all courses */
+
+
+/* course_detail */
+.course_bg{
+    background-image: url("/static/images/course_bg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.course_page_image{
+    margin-top: 80px;
+}
+.course_item_image{
+    height: 300px;
+    width: 350px;
+}
+.course_page_title{
+    margin-top: 100px;
+    margin-left: 45px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 56px;
+
+    color: #232323;
+}
+
+.course_page_desc{
+    margin-top: 25px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 42px;
+
+    color: #464646;
+
+}
+.like_line{
+    margin-top: 20px;
+}
+.like_line_hr{
+    color: #232323;
+    background-color: #232323;
+    height: 1px;
+}
+.buy_field{
+    margin-top: 20px;
+    height: 50px;
+    
+    display: flex;
+    justify-content: flex-end;
+}
+.buy_button{
+    height: 50px;
+    width: 200px;
+
+    background-color: #699F75;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #232323;
+}
+.lesson_couse{
+    margin-top: 20px;
+    height: 130px;
+    width: 80%;
+    background-color: #cdcdcd;
+
+    display: flex;
+}
+.bottom_margin{
+    padding-bottom: 20px;
+}
+.lesson_image_field{
+    height: 130px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lesson_image{
+    height: 115px;
+    width: 115px;
+}
+.lesson_info{
+    height: 130px;
+    width: 70%;
+}
+.Lesson_block_title{
+    height: 40%;
+    display: flex;
+    align-items: center;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #232323;
+    margin-left: 40px;
+}
+.lesson_block_desc{
+    height: 40%;
+    display: flex;
+    align-items: center;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+
+    color: #464646;
+    margin-left: 20px;
+}
+/* end course_detail */
