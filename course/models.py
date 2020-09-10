@@ -27,7 +27,7 @@ class Course(models.Model):
     name_slug = models.CharField(verbose_name='Name slug',max_length=250, blank=True, null = True)
     is_active = models.BooleanField(verbose_name=_('Is published?'), default=False)
     sale = models.CharField(max_length=150, blank=True, verbose_name=_(u'sale'))
-
+    is_top = models.BooleanField(verbose_name=_('is top'), default=False)
 
 
     def __str__(self):

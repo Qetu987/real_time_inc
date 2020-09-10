@@ -6,17 +6,21 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 d-flex justify-content-center">
-                <p class="find_course_title">Find your course now</p>
+                <p class="find_course_title">Find <span style="color: #857871;">your</span>  course now</p>
             </div>
         </div>
     </div>
     <div class="container">
         <div class="row">
             <div class="col-md-12 d-flex justify-content-center">
-                <div class="search"></div>
+                <form onsubmit="event.preventDefault();" class="search-form">
+                    <label for="search" class="screen-reader-text">Search</label>
+                    <input id="search"
+                   type="search" class="search-input" placeholder="Enter search terms...">
+                    <button class="search-button">Search</button>
+                  </form>
             </div>
         </div>
     </div>
-
 </div>
 {% endblock %}

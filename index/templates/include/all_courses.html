@@ -15,7 +15,7 @@
             {% for row in rows %}
                 <div class="col-md-4">
                 <a href="{{ row.get_absolute_url }}">
-                    <div class="element_corusel">
+                    <div class="element_of_corusel">
                         <div class="element_all_photo">
                             <img src="{{ row.image.url }}" alt="" class="element_all_photo_photo">
                         </div>
@@ -41,6 +41,7 @@
                             </div>
                         </div>
                     </div>
+                    <div style="margin-bottom: 20px;"></div>
                 </a>
             </div>
             {% endfor %}
